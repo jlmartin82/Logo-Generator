@@ -4,20 +4,31 @@ const { create } = require('svg-crowbar');
 
 inquirer 
 
-  .promt([
+  .prompt([
     {
       type: 'input',
       name: 'text',
-      message: 'Enter up to three characters for the logo text:'
+      message: 'Enter up to three characters for the logo text:',
       validate: function (input) {
         return input.length <= 3 || 'Please enter three characters.';
       }
-    },
+    }
     {
       type: 'input',
       name: 'textColor',
       message: 'Enter the text color (keyword or hexadecimal number):'
-    }
+    },
+    {
+      type: 'list',
+      name: 'shape',
+      message: 'Select a shape for the logo:',
+      choices: ['circle', 'square', 'triangle']
+    },
+   {
+    type: 'input',
+    name: 'shapeColor',
+    message: 'Enter the shape color (keyword or hexadecimal number):'
+  },
   ])
 
 
@@ -30,4 +41,3 @@ inquirer
 
 
 
-  
