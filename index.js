@@ -1,6 +1,5 @@
 const fs = require('fs');
-const { createPromptModule } = require('inquirer');
-const inquirer = createPromptModule();
+const inquirer = require('inquirer');
 
 inquirer
   .prompt([
