@@ -1,5 +1,11 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+// shapes.js
+
+const shapes = {};
+
+module.exports = shapes;
+
 
 inquirer
   .prompt([
@@ -31,12 +37,29 @@ inquirer
   .then(generateLogo)
   .catch(console.error);
 
+  function shapeSelected(svgShape, svgColor) {
+    if (svgShape === "circle") {
+      return `<circle cx="150" cy="100" r="100" fill="${svgColor}"/>`;
+    }
+    if (svgShape === "square") {
+      return `<rect width="300" height="100" style="fill:${svgColor};stroke-width:3;stroke:black;" />`;
+    }
+    if (svgShape === "triangle") {
+      return `<polygon points="150,30 270,170 30,170" style="fill:${svgColor};" />`;
+    }
+  }
+  
+  
+  
+
+
 function generateLogo(answers) {
   const { text, textColor, shape, shapeColor } = answers;
 
   const svgMarkup = `
     <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
-      <rect width="100%" height="100%" fill="${shapeColor}" />
+      <rect width="100%" height="100%" fill="white" />
+      ${shapeSelected(shape,shapeColor)}
       <text x="50%" y="50%" fill="${textColor}" text-anchor="middle" dominant-baseline="middle" font-size="60">${text}</text>
     </svg>
   `;
