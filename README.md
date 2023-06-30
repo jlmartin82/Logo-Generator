@@ -29,6 +29,13 @@ Once you have entered all of the information, the script will generate the SVG f
 
 The following is an example of how to use the script:
 
+file:///Users/justin/Downloads/Untitled_%20Jun%2029,%202023%209_50%20PM.webm
+
+file:///Users/justin/bootcamp/Logo-Generator/logosvg.svg 
+
+!(Users/justin/bootcamp/Logo-Generator/Examples/Screenshot 2023-06-29 at 9.54.31 PM.png)
+
+!(/Examples/Screenshot%202023-06-29%20at%209.54.31%20PM.png "SVG example")
 
 node logo.js
 
