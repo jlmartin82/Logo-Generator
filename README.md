@@ -29,9 +29,9 @@ Once you have entered all of the information, the script will generate the SVG f
 
 The following is an example of how to use the script:
 
-file:///Users/justin/Downloads/Untitled_%20Jun%2029,%202023%209_50%20PM.webm
+[SVG.webm](https://github.com/jlmartin82/Logo-Generator/assets/129562637/db064a24-f428-4d91-be95-c3ea8cb4e424)
 
-file:///Users/justin/bootcamp/Logo-Generator/logosvg.svg 
+
 
 !(Users/justin/bootcamp/Logo-Generator/Examples/Screenshot 2023-06-29 at 9.54.31 PM.png)
 
