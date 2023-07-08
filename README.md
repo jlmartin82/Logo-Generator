@@ -17,6 +17,7 @@ To generate a logo, run the following command:
 ![Walkthrough](../../Desktop/SVG.webm)
 
 ![walkthrough](../../Desktop/SVG.webm)
+[SVG.webm](https://github.com/jlmartin82/Logo-Generator/assets/129562637/e53f2bc3-8b2c-478b-ab5f-4686e55cb9f8)
 
 
 node logo.js
